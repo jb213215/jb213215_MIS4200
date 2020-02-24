@@ -1,16 +1,24 @@
-﻿@model jb213215_MIS4200.Models.Student
+﻿@model jb213215_MIS4200.Models.UserDetails
 
 @{
-    ViewBag.Title = "Delete Student";
+    ViewBag.Title = "Delete";
 }
 
-<h2>Delete Student</h2>
+<h2>Delete</h2>
 
-<h3>Are you sure you want to delete this student?</h3>
+<h3>Are you sure you want to delete this?</h3>
 <div>
-    <h4>Student</h4>
+    <h4>UserDetails</h4>
     <hr />
     <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
         <dt>
             @Html.DisplayNameFor(model => model.firstName)
         </dt>
@@ -28,27 +36,35 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.email)
+            @Html.DisplayNameFor(model => model.PhoneNumber)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.email)
+            @Html.DisplayFor(model => model.PhoneNumber)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.phone)
+            @Html.DisplayNameFor(model => model.Office)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.phone)
+            @Html.DisplayFor(model => model.Office)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.studentSince)
+            @Html.DisplayNameFor(model => model.Position)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.studentSince)
+            @Html.DisplayFor(model => model.Position)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.hireDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.hireDate)
         </dd>
 
     </dl>

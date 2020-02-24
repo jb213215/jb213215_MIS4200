@@ -1,15 +1,15 @@
 ﻿@model IEnumerable<jb213215_MIS4200.Models.Instructors>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Instructor Overview";
 }
 
-<h2>Index</h2>
+<h2>Instructor Overview</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-<table class="table">
+<table class="table table-bordered table-striped">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.firstName)

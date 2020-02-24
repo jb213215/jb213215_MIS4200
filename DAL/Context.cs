@@ -24,5 +24,7 @@ namespace jb213215_MIS4200.DAL
         public System.Data.Entity.DbSet<jb213215_MIS4200.Models.Instructors> Instructors { get; set; }
 
         public System.Data.Entity.DbSet<jb213215_MIS4200.Models.CourseDetails> CourseDetails { get; set; }
+
+        public System.Data.Entity.DbSet<jb213215_MIS4200.Models.UserDetails> UserDetails { get; set; }
     }
 }
