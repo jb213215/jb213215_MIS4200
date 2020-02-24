@@ -23,6 +23,7 @@ namespace jb213215_MIS4200.Models
 
         [Display(Name = "Email Address")]
         [Required]
+        [DataType(DataType.EmailAddress)]
         public string email { get; set; }
 
         [Display(Name = "Phone Number")]
